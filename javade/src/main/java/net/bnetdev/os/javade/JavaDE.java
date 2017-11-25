@@ -123,6 +123,7 @@ public class JavaDE extends Project {
 		DisplayModule dm = (DisplayModule) display.getController().getModule(DisplayModule.NAME);
 		if (dm.isAvailable()) {
 			JavaDE.getLogger().debug(alm.DISPLAY_IS_AVAILABLE());
+			dm.init();
 		} else {
 			JavaDE.getLogger().debug(alm.DISPLAY_NOT_AVAILABLE());
 		}
